@@ -12,6 +12,7 @@ This is the title: Sphinxy's documentation
 
 The Egyptian Sphinx 
 --------------------
+.. image:: _static/sphinx.png
 
 
 Indices and tables
