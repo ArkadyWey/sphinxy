@@ -4,6 +4,9 @@ from sphinxy.riddle import Riddle
 
 
 class IncorrectAnswer(Exception):
+    """Exception to indicate an incorrect answer to the riddle.
+
+    """
     ...
 
 
@@ -19,21 +22,37 @@ class Sphinx:
         )
 
     def introduce(self) -> str:
+        """Introduction that the sphinx uses.
+
+        Returns:
+            str:
+                The string of speech that sphinx uses to introduce itself.
+        """
         return (
             f"Greetings, mortals. I am {self._name}. I have guarded the city of Thebes"
             "for centuries and posed riddles to those who dared to approach me."
         )
 
     def update_riddle(self, riddle: Riddle) -> str:
+        """Updates the stored riddle.
+
+        Args:
+            riddle (Riddle): 
+                The new riddle for the sphinx to store store.
+
+        Returns:
+            str:
+                A confirmation that the riddle has been stored by the sphinx.
+        """
         self._riddle = riddle
         return "I have updated my riddle. Are you ready to solve it?"
 
     def pose_riddle(self, include_hint: bool = False) -> tuple[str, str | None]:
-        """Poses the riddle question, with a hint if one is given.
+        """Poses the riddle question, with a hint if one is asked for.
 
         Args:
             include_hint (bool, optional): 
-                Controls whether to include a hint for the riddle. Defaults to False.
+                Controls whether to include a hint for the riddle. Set to true if required. Defaults to False.
 
         Returns:
             tuple[str, str | None]: 
