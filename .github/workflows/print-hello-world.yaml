@@ -1,4 +1,4 @@
-name: Hello World
+name: print-hello-world
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  print_hello_world:
+  print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Job-1 Say hello
+      - name: Step 1. Say hello
         run: echo "Hello, World!"
