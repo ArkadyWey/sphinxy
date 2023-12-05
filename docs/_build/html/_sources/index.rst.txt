@@ -10,6 +10,8 @@ This is the title: Sphinxy's documentation
    :maxdepth: 2
    :caption: Contents: 
 
+   modules
+
 The Egyptian Sphinx 
 --------------------
 .. image:: _static/sphinx.png
