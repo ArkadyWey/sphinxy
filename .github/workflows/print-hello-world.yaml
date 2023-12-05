@@ -9,5 +9,5 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Step 1. Say hello
+      - name: Step 1. Print hello world to terminal
         run: echo "Hello, World!"
