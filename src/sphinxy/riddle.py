@@ -4,6 +4,14 @@ from typing import Iterator
 
 @dataclass(frozen=True)
 class Riddle:
+    """_summary_
+
+    Returns:
+        _type_: _description_
+
+    Yields:
+        _type_: _description_
+    """
     question: str
     answer: str
 
