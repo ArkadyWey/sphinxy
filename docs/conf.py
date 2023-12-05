@@ -15,9 +15,11 @@ author = 'Arkady Wey'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon']
+    'sphinx.ext.napoleon', 
+    'sphinx.ext.githubpages']
 # 'autodoc' helps sphinx read docstrings as documentation 
 # 'napoleon' helps sphinx read docstrings that aren't in .rst format as documentation.
+# 'githubpages' automatically adds a  .nojekyll file at html so that pages doesn't use jekyll (static site generator) sicne we are using sphinx
 
 autoclass_content = "both"
 # add the option to display documentation both from a class docstring and its __init__ methods’s
