@@ -29,6 +29,17 @@ class Sphinx:
         return "I have updated my riddle. Are you ready to solve it?"
 
     def pose_riddle(self, include_hint: bool = False) -> tuple[str, str | None]:
+        """Poses the riddle question, with a hint if one is given.
+
+        Args:
+            include_hint (bool, optional): 
+                Controls whether to include a hint for the riddle. Defaults to False.
+
+        Returns:
+            tuple[str, str | None]: 
+                Contains (0 position) question string and (1 position)
+                a hint string if provided, or else None.
+        """
         hint = (
             f"Hint: The answer starts with the letter '{self._riddle.get_hint()}'."
             if include_hint
@@ -37,6 +48,23 @@ class Sphinx:
         return (self._riddle.question, hint)
 
     def check_riddle_answer(self, answer: str, return_hint: bool = False) -> str:
+        """Evaluates the given answer to the riddle
+
+        Args:
+            answer (str): 
+                The given answer to the riddle.
+            return_hint (bool, optional): 
+                Controls whether a hint for the riddle should
+                be returned. Defaults to False.
+
+        Raises:
+            IncorrectAnswer: 
+                Exception for incorrect answer to riddle.
+
+        Returns:
+            str: 
+                The result of the evaluation of the answer.
+        """
         if self._riddle.check_answer(answer):
             return "Your answer was correct. You may pass."
         elif return_hint:
