@@ -19,6 +19,9 @@ extensions = [
 # 'autodoc' helps sphinx read docstrings as documentation 
 # 'napoleon' helps sphinx read docstrings that aren't in .rst format as documentation.
 
+autoclass_content = "both"
+# add the option to display documentation both from a class docstring and its __init__ methods’s
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
