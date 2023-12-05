@@ -9,5 +9,5 @@ jobs:
   print_hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: say_hello
+      - name: Job-1 Say hello
         run: echo "Hello, World!"
