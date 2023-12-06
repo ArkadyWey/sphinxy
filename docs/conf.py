@@ -37,3 +37,20 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = "furo" #'alabaster'
 html_static_path = ['_static']
 html_favicon = "_static/favicon.ico"
+
+# Ask sphinx to use template html file to add sidebar
+templates_path = [
+    "_templates",
+]
+
+# Use defaults for the rest of the sidebar options from furo
+html_sidebars = {
+    "**": [
+        "sidebar/brand.html",
+        "sidebar/search.html",
+        "sidebar/scroll-start.html",
+        "sidebar/navigation.html",
+        "sidebar/show-versions.html",
+        "sidebar/scroll-end.html",
+    ],
+}
