@@ -29,7 +29,6 @@ jobs:
       
       - name: Step 4. Build documentation with Sphinx
         run: |
-          sphinx-apidoc --output-dir ./docs ./src/sphinxy --separate
           sphinx-multiversion ./docs ./docs/_build/html
 
       - name: Step 5. Create redirecting index in build
