@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  build-and-publish-docs:
+  build-and-publish-docs-with-multiversion:
     runs-on: ubuntu-latest
     
     permissions:
