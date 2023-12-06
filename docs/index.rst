@@ -12,6 +12,7 @@ This is another test.
 This is testing v0.0.9.
 This is testing after v0.1.0
 Test workflow.
+This is the state at v0.1.3.
 
 
 .. toctree::
