@@ -6,7 +6,7 @@
 This is the title: Sphinxy's documentation
 ==========================================
 
-Explore Sphinxy's documentation.
+Explore Sphinxy's documentation by browsing the different modules.
 
 
 .. toctree::
