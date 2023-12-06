@@ -9,6 +9,7 @@ This is the title: Sphinxy's documentation
 Explore Sphinxy's documentation by browsing the different modules.
 This is a test.
 This is another test.
+This is testing v0.0.9.
 
 
 .. toctree::
