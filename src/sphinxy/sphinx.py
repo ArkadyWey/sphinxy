@@ -11,7 +11,14 @@ class IncorrectAnswer(Exception):
 
 
 class Sphinx:
+    """_summary_
+    """
     def __init__(self, name: str) -> None:
+        """_summary_
+
+        Args:
+            name (str): _description_
+        """
         self._name = name
         self._riddle = Riddle(
             question=(
