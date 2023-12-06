@@ -33,7 +33,7 @@ jobs:
 
       - name: Step 5. Create redirecting index in build
         run: |
-          yes | cp ./docs/_templates/redirect-gh-pages-to-main.html ./docs/_build/html/index.html
+          cp ./docs/_templates/redirect-gh-pages-to-main.html ./docs/_build/html/index.html
       
       - name: Step 6. Deploy using Github pages
         uses: peaceiris/actions-gh-pages@v3
