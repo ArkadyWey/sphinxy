@@ -50,7 +50,7 @@ html_sidebars = {
         "sidebar/search.html",
         "sidebar/scroll-start.html",
         "sidebar/navigation.html",
-        "sidebar/show-versions.html",
+        "sidebar/versioning.html",
         "sidebar/scroll-end.html",
     ],
 }
